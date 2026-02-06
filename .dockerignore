@@ -1,0 +1,56 @@
+# Node.js
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage
+.nyc_output
+test-results
+tests
+
+# Development
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Documentation
+README.md
+docs/
+
+# Logs
+logs/
+*.log
+
+# Environment files (should be mounted as secrets)
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+tmp/
+temp/
+.cache
+
+
+

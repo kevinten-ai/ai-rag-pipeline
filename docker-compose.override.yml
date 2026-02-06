@@ -1,0 +1,46 @@
+# Docker Compose Override for Development
+# 开发环境Docker Compose覆盖配置
+
+version: '3.8'
+
+services:
+  # RAG Pipeline 开发环境配置
+  rag-pipeline:
+    build:
+      target: development
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - LOG_LEVEL=debug
+    command: ["npm", "run", "dev"]
+
+  # Elasticsearch 开发配置
+  elasticsearch:
+    environment:
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+
+  # MongoDB 开发配置
+  mongodb:
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=dev
+      - MONGO_INITDB_ROOT_PASSWORD=dev123
+    volumes:
+      - mongodb_data:/data/db
+
+  # 开发时可以注释掉监控服务以节省资源
+  # prometheus:
+  #   profiles: ["monitoring"]
+
+  # grafana:
+  #   profiles: ["monitoring"]
+
+  # Redis 开发配置
+  redis:
+    profiles: ["cache"]  # 只有在需要缓存时启动
+
+
+

@@ -1,0 +1,27 @@
+# Elasticsearch configuration for RAG Pipeline
+# RAG流水线Elasticsearch配置
+
+cluster.name: rag-pipeline-cluster
+network.host: 0.0.0.0
+http.port: 9200
+
+# Security settings
+xpack.security.enabled: true
+xpack.security.http.ssl.enabled: false
+xpack.security.transport.ssl.enabled: false
+
+# Memory settings
+bootstrap.memory_lock: false
+
+# Index settings
+index.number_of_shards: 1
+index.number_of_replicas: 0
+
+# Discovery
+discovery.type: single-node
+
+# Logging
+logger.level: INFO
+
+
+
