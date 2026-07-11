@@ -24,7 +24,7 @@
 部署：        Vercel
 数据库：      Supabase (Postgres + pgvector)
 嵌入模型：    火山引擎 Ark Embedding-3 API
-对话模型：    Kimi K2.5 / Ark CodingPlan（通过 Vercel AI SDK）
+对话模型：    Kimi K2.5 / Ark Agent Plan（通过 Vercel AI SDK）
 文档来源：    飞书开放平台 SDK (@larksuiteoapi/node-sdk)
 RAG 编排：    LangChain.js
 流式输出：    Vercel AI SDK (@ai-sdk/moonshotai + -sdk/openai-compatible)
@@ -277,7 +277,7 @@ RAG 编排：    LangChain.js
 
 **Step 6 - LLM 生成**
 ```
-- 模型信息（Kimi K2.5 / Ark CodingPlan）
+- 模型信息（Kimi K2.5 / Ark Agent Plan）
 - 流式输出过程（逐字显示）
 - 答案中引用来源的高亮标注
 - Token 用量和费用估算

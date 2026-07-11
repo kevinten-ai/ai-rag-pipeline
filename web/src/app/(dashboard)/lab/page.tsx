@@ -56,7 +56,7 @@ const QUERY_STRATEGIES: StrategyOption[] = [
 
 const MODEL_STRATEGIES: StrategyOption[] = [
   { id: "kimi", label: "Kimi (Moonshot)", description: "月之暗面大模型" },
-  { id: "ark", label: "Ark (Volcengine)", description: "火山引擎 Ark CodingPlan" },
+  { id: "ark", label: "Ark (Volcengine)", description: "火山引擎 Ark Agent Plan" },
 ];
 
 // ---------------------------------------------------------------------------

@@ -119,7 +119,7 @@
 └─────────────┼────────────────────┼─────────────────┘
               │                    │
     ┌─────────▼─────────┐  ┌──────▼──────┐
-    │  Supabase + pgvector │  │  Ark CodingPlan │
+    │  Supabase + pgvector │  │  Ark Agent Plan │
     │  (向量存储 + SQL)     │  │  (LLM 推理)   │
     └───────────────────┘  └─────────────┘
 ```
@@ -127,7 +127,7 @@
 | 层 | 技术 |
 |----|------|
 | 前端 | Next.js 16, TypeScript, Tailwind CSS, shadcn/ui, Recharts |
-| LLM | 火山引擎 Ark Ark CodingPlan (管道), Ark (教学分析) |
+| LLM | 火山引擎 Ark Ark Agent Plan (管道), Ark (教学分析) |
 | 向量数据库 | Supabase pgvector (1024d, HNSW 索引) |
 | 嵌入模型 | 火山引擎 Ark doubao-embedding-vision-251215 |
 | 全文搜索 | PostgreSQL tsvector + GIN 索引 |

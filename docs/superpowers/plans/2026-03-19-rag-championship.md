@@ -6,7 +6,7 @@
 
 **Architecture:** Layer advanced RAG strategies (Contextual Retrieval, Self-RAG, CRAG, Adaptive Routing, Graph RAG) on top of the existing pipeline. Each technique is a pluggable module with full trace visualization. A new Benchmark page provides quantitative comparison. A guided Demo Mode walks judges through capabilities.
 
-**Tech Stack:** Next.js 16 + TypeScript, Volcengine Ark Ark CodingPlan + Embedding-3, Supabase pgvector, existing glass-box trace infrastructure.
+**Tech Stack:** Next.js 16 + TypeScript, Volcengine Ark Ark Agent Plan + Embedding-3, Supabase pgvector, existing glass-box trace infrastructure.
 
 ---
 
